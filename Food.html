@@ -1,0 +1,610 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        <script src="https://kit.fontawesome.com/9a93cb04a1.js" crossorigin="anonymous"></script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+
+        .header {
+            display: flex;
+            align-items: center;
+            height: 200px;
+            /* position: sticky;
+            top: 0px;
+            background-color: white; */
+            left: 0;
+            right: 0;
+        }
+
+        .title_txt {
+            margin-left: auto;
+            display: flex;
+        }
+
+        .title_txt p {
+            margin: 10px;
+            font-weight: bold;
+        }
+
+        .imgtxt {
+            display: flex;
+        }
+
+        .txt1 {
+
+            font-size: 70px;
+            color: black;
+        }
+
+        .txt2 {
+            font-size: 60px;
+            color: yellow;
+        }
+
+        .imgtxt img {
+            height: 500px;
+            width: 910px;
+        }
+
+        .imgtxt1 {
+            margin-left: 50px;
+        }
+
+        .abc {
+            display: flex;
+            font-size: 30px;
+            font-weight: bold;
+            justify-content: center;
+            text-align: center;
+            width: 100%;
+        }
+
+        .abc img {
+            height: 250px;
+            width: 250px;
+            margin-bottom: -90px;
+        }
+
+        .abcd {
+            display: flex ;
+            justify-content: center;
+            
+        }
+
+        .abcd730 img {
+            width: 570;
+            height: 730;
+        }
+
+        .abcd350 img {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            width: 570px;
+            height: 100%;
+            margin-left: 30px;
+        }
+        
+        .abcd730{
+            position: relative;
+        }
+
+        .abcd730-txt{
+            position: absolute;
+            bottom: 100px;
+            right: 0px;
+            left: 0px;
+            font-size: 40px;
+            margin-left: 50px;
+            color: white;
+        }
+        
+        .abcd350-1{
+            position: relative;
+        }
+
+        .abcd350-2{
+            position: relative;
+        }
+
+        .abcd350-txt1{
+            position: absolute;
+            bottom: 50px;
+            right: 0px;
+            left: 0px;
+            font-size: 35px;
+            margin-left: 50px;
+            color: white;
+            margin-bottom: -15px;
+        }
+        
+        
+        .abcd350-txt2{
+            position: absolute;
+            bottom: 100px;
+            right: 0px;
+            left: 0px;
+            font-size: 30px;
+            margin-left: 50px;
+            color: white;
+            margin-bottom: -50px;
+        
+        }
+        
+        .abcd350-txt2 p{
+            font-size: 20px;
+        }
+        
+        .Featured-img{
+            display: flex;
+            justify-content: center;
+            padding: 10PX;
+        }       
+
+        .Featured-img img{
+            background-color: rgba(200,200,200,.5);
+            margin: 25px;
+        }
+        .Featured-img p{
+            text-align: start;
+        }
+        .Featured{
+            text-align: center;
+            font-size: 30px;
+            font-weight: bold;
+            margin-top: 100px;
+        }
+
+        .img50:hover{
+            color: yellow;
+        }
+        .img51:hover{
+            color: yellow;
+        }
+        .img52:hover{
+            color: yellow;
+        }
+        .img53:hover{
+            color: yellow;
+        }
+        .img54:hover{
+            color: yellow;
+        }
+        .img55:hover{
+            color: yellow;
+        }
+
+        .Featured-flex{
+            display: flex;
+            font-weight: bold;
+            font-size: 20px;
+            margin-top: -10px;  
+        }
+        
+        .fas1{
+            display: flex;
+        }
+        
+        .fas123{
+            border: 1px solid black;
+            border-radius: 5px;
+            margin-left: 10px;
+        }
+        
+        .fas123:hover{
+            background-color: yellow;
+        }
+        
+        .item1{
+            display:flex;
+            justify-content: center;
+            position:relative;
+            margin-top: 80px;
+            
+        }
+
+        .item-img-txt{
+            height: 400px;
+            width: 500px;
+            background-color: white;
+            position: absolute;
+            left: 80px;
+            bottom: 100px;
+            font-weight: bold;
+            text-align: center;
+            font-size: 70px;
+            box-shadow: 3px 3px 10px 10px;
+            justify-content: center;
+        }
+
+        .item2{
+            margin-top: 80px;
+        }
+
+        .item3{
+            display: flex;
+            justify-content: center;
+        }
+
+        .item3-img1-1{
+            width: 550px;
+            height: 800px;
+        }
+
+        .item3-img2{
+            display: flex;
+        }
+        
+        .item3-img3{
+            display: flex;
+        }
+
+        .item3-txt{
+            font-weight: bold;
+            text-align: center;
+            font-size: 25px;
+        }
+
+        .item3-img2{
+            margin-left: 30px;
+        }
+        
+        .item3-img2 img{
+            background-color: rgb(200,200,200);
+        }
+        
+        .item3-img3{
+            margin-left: 30px;
+        }
+
+        .item3-img3 img{
+            background-color: rgb(200,200,200);
+        }
+
+        .item3-img-txt{
+            position: relative;
+
+        }
+
+        .item3-img1{
+            height: 100%;
+        }
+
+        .item3-img1-txt1{
+            position: absolute;
+            bottom: 80px;
+            left: 40px;
+            color: white;
+            font-size: 35px;
+        }
+        
+        .item4-title{
+            font-weight: bold;
+            text-align: center;
+            font-size: 25px;
+            margin-top: 100px;
+        }
+
+        .item4-img{
+            display: flex;
+            justify-content: center;
+        }
+
+        .item4-txt{
+            width: 300px;
+            height: 500px;
+        }
+
+        .txtstrong{
+            font-weight: bold;
+        }
+        
+        .item4Control{
+            margin: 30px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="header container">
+        <div class="header-txt1">
+            <div>
+                <h1>KARDONE</h1>
+                <h3>HEALTLY FOOD</h3>
+            </div>
+        </div>
+        <div class="title_txt">
+            <p>HOME</p>
+            <p>ABOUT US</p>
+            <p>COLLECTIONS</p>
+            <p>BLOG</p>
+            <p>SALE</p>
+            <p>CONTACT US</p>
+        </div>
+
+    </div>
+
+    <div class="imgtxt">
+        <div class="img">
+            <img src="img/asset 14.png" alt="">
+        </div>
+        <div class="imgtxt1">
+            <div class="txt1">
+                <p>Fresh and</p>
+                <p>Delicious</p>
+            </div>
+            <div class="txt2">
+                <p>ALL YEAR</p>
+                <p>ROUNG!</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="abc">
+        <div class="img50">
+            <img src="img/asset 50.png" alt="">
+            <p>Fresh Fruits</p>
+        </div>
+        <div class="img51">
+            <img src="img/asset 51.png" alt="">
+            <p>Veggies</p>
+        </div>
+        <div class="img52">
+            <img src="img/asset 52.png" alt="">
+            <p>Fish</p>
+        </div>
+        <div class="img53">
+            <img src="img/asset 53.png" alt="">
+            <p>Nuts & Seeds</p>
+        </div>
+        <div class="img54">
+            <img src="img/asset 54.png" alt="">
+            <p>Bread</p>
+        </div>
+        <div class="img55">
+            <img src="img/asset 55.png" alt="">
+            <p>Dairy</p>
+        </div>
+    </div>
+
+    <div class="abcd">
+
+        <div class="abcd730">
+            <img src="img/asset 56.png" alt="">
+            <div class="abcd730-txt">
+                Best Quality Products
+                <div>
+                    <a href="#">Shop now</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="abcd350">
+            <div class="abcd350-1"> 
+                <img src="img/asset 57.png" alt="">
+                <div class="abcd350-txt1">
+                    Hot Deals:
+                <p>CRAZY PRICE $2.99</p>
+                    
+                    <div>
+                        <a href="#">Shop now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="abcd350-2">
+                <img src="img/asset 58.png" alt="" style="margin-top: 30px;">
+                <div class="abcd350-txt2">
+                    HURRY UP!
+                   <p>Don't miss your chance to be the first!</p>
+                    <div>
+                        <a href="#">Shop now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+
+    <div>
+        <div class="Featured">
+            <p>Featured Products</p>
+        </div>
+        
+        <div class="Featured-img">
+            <div>
+                <img src="img/asset 9.png" alt="">
+                <p>P28 Foods Formulated...</p>
+                <div class="Featured-flex">
+                    <p class="Featured-money"><p style="text-decoration:line-through">$26.00</p>$20.00</p>
+                </div>
+                <div class="fas1">   
+                    <div class="fas123"><i class="fas fa-shopping-cart">ADD TO CART</i></div>
+                    <div class="fas123"><i class="far fa-eye"></i></div>
+                    <div class="fas123"><i class="fas fa-heart"></i></div>
+                </div>
+            </div>
+            <div>
+                <img src="img/asset 10.png" alt="">
+                <p>P28 Foods Formulated...</p>
+                <div class="Featured-flex">
+                    <p class="Featured-money">$29.00-$36.00</p>
+                </div>
+                <div class="fas1">
+                    <div class="fas123"><i class="fas fa-shopping-cart">CHOOSE VARIANT</i></div>
+                    <div class="fas123"><i class="far fa-eye"></i></div>
+                    <div class="fas123"><i class="fas fa-heart"></i></div>
+                </div>
+            </div>
+            <div>
+                <img src="img/asset 11.png" alt="">
+                <p>KIND Nuts & Spices,...</p>
+                <div class="Featured-flex">
+                    <p class="Featured-money">$12.00-$30.00</p>
+                </div>
+                <div class="fas1">
+                   <div class="fas123"><i class="fas fa-shopping-cart">CHOOSE VARIANT</i></div> 
+                   <div class="fas123"><i class="far fa-eye"></i></div>
+                   <div class="fas123"><i class="fas fa-heart"></i></div>
+                </div>
+            </div>
+            <div>
+                <img src="img/asset 12.png" alt="">
+                <p>Justin's Nut Butter ...</p>
+                <div class="Featured-flex">
+                    <p class="Featured-money"><p style="text-decoration:line-through">$33.00</p>$22.00</p>
+                </div> 
+                <div class="fas1">
+                   <div class="fas123"><i class="fas fa-shopping-cart">ADD TO CART</i></div> 
+                   <div class="fas123"><i class="far fa-eye"></i></div>
+                   <div class="fas123"><i class="fas fa-heart"></i></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="item1">
+        <div class="item1-img">
+            <img src="img/asset 40.png" alt="">
+        </div>
+        <div class="item-img-txt">
+            20%OFF <p>Fresh Berries</p>
+        </div>
+    </div>
+
+    <div class="item2">
+
+
+    </div>
+
+    <div class="item3">
+        <div class="item3-img-txt">
+            <div class="item3-img1">
+                <img class="item3-img1-1" src="img/asset 59.png" alt="">
+                <div class="item3-img1-txt1">
+                    Looking for something 
+                    <p>special?</p>  
+                    <a href="">Shop now</a>
+                </div>
+            </div>
+        </div>
+        <div class="item3-txt">
+            <p>On Sale</p>
+            <div class="item3-img2">
+                <div>
+                    <img class="item3-img2-1" src="img/asset 41.png" alt="">
+                    <p>P28 Foods Formulated...</p>
+                <div class="Featured-flex">
+                    <p class="Featured-money">$29.00-$36.00</p>
+                </div>
+                    <div class="fas1">   
+                        <div class="fas123"><i class="fas fa-shopping-cart">CHOOSE VARIANT</i></div>
+                        <div class="fas123"><i class="far fa-eye"></i></div>
+                        <div class="fas123"><i class="fas fa-heart"></i></div>
+                    </div>
+                </div>
+                <div>
+                    <img class="item3-img2-2" src="img/asset 43.png" alt="">
+                    <p>Nabisco Mini Nilla W...</p>
+                <div class="Featured-flex">
+                    <p class="Featured-money">$30.00</p>
+                </div>
+                    <div class="fas1">   
+                        <div class="fas123"><i class="fas fa-shopping-cart">ADD TO CART</i></div>
+                        <div class="fas123"><i class="far fa-eye"></i></div>
+                        <div class="fas123"><i class="fas fa-heart"></i></div>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="item3-img3">
+                <div>
+                    <img class="item3-img3-1" src="img/asset 45.png" alt="">
+                    <p>KIND Nuts & Spices,...</p>
+                <div class="Featured-flex">
+                    <p class="Featured-money">$12.00-$30.00</p>
+                </div>
+                    <div class="fas1">   
+                        <div class="fas123"><i class="fas fa-shopping-cart">CHOOSE VARIANT</i></div>
+                        <div class="fas123"><i class="far fa-eye"></i></div>
+                        <div class="fas123"><i class="fas fa-heart"></i></div>
+                    </div>
+                </div>
+                <div>
+                    <img class="item3-img3-2" src="img/asset 47.png" alt="">
+                    <p>Kashi Cereal Bar,Ri...</p>
+                <div class="Featured-flex">
+                    <p class="Featured-money">$23.00</p>
+                </div>
+                    <div class="fas1">   
+                        <div class="fas123"><i class="fas fa-shopping-cart">ADD TO CART</i></div>
+                        <div class="fas123"><i class="far fa-eye"></i></div>
+                        <div class="fas123"><i class="fas fa-heart"></i></div>
+                    </div>
+                </div>
+            </div>
+        
+        </div>
+        
+    </div>
+
+    <div class="item4">
+        <div class="item4-title">
+            <p>Featured Posts</p>
+        </div>
+        <div class="item4-img">
+
+            <div class="item4Control">
+                <img src="img/asset 6.png" alt="">
+                <div class="item4-txt">
+                    <p>29 January</p>
+                    <p class="txtstrong">12 Heavenly Fruits and Honey</p>
+                    <p>Caffeine and sugar may give you an energy spike, but the crash that follows will leave you feeling even more tired than before. However, great...</p>
+                </div>
+            </div>
+
+            <div class="item4Control">
+                <img src="img/asset 7.png" alt="">
+                <div class="item4-txt">
+                    <p>29 January</p>
+                    <p class="txtstrong">The Great Start of Your Weight</p>
+                    <p>Kids need energy for sports and play, so it’s important that they’re consuming a nutrient-dense snack about an hour before their activity that contains carbohydrates....</p>
+                </div>
+            </div>
+
+            <div class="item4Control">
+                <img src="img/asset 8.png" alt="">
+                <div class="item4-txt">
+                    <p>29 January</p>
+                    <p class="txtstrong">The Products that Help You Boost the Energy</p>
+                    <p>Hello, my dears! My name is mary and here, in my blog, I want to share with you my findings and useful thoughts about making...</p>
+                </div>
+            </div>
+        </div>
+        
+        
+    </div>
+    
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
